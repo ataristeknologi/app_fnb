@@ -1,4 +1,3 @@
-
 <?php
     include "header.php";
 ?>
@@ -20,7 +19,7 @@
             <div class="col-md-4">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">DATA KASIR</h4>
+                  <h4 class="card-title">DATA TRANSAKSI</h4>
                   <p class="card-category"></p>
                 </div>
                 <div class="card-body">

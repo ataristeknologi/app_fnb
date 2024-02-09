@@ -12,28 +12,28 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="javascript:void(0)">
+            <a class="nav-link" href="dashboard.php">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link" href="javascript:void(0)">
+            <a class="nav-link" href="data_kasir.php">
               <i class="material-icons">person</i>
               <p>Kasir</p>
             </a>
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link" href="javascript:void(0)">
+            <a class="nav-link" href="data_transaksi.php">
               <i class="material-icons">edit</i>
               <p>Transaksi</p>
             </a>
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link" href="javascript:void(0)">
+            <a class="nav-link" href="laporan.php">
               <i class="material-icons">tab</i>
               <p>Laporan</p>
             </a>
