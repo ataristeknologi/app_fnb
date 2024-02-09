@@ -6,7 +6,7 @@
   -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          CAFE AHS
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -15,6 +15,27 @@
             <a class="nav-link" href="javascript:void(0)">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">person</i>
+              <p>Kasir</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">edit</i>
+              <p>Transaksi</p>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="javascript:void(0)">
+              <i class="material-icons">tab</i>
+              <p>Laporan</p>
             </a>
           </li>
           <!-- your sidebar here -->

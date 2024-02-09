@@ -280,7 +280,7 @@ md = {
 
     $.notify({
       icon: "add_alert",
-      message: "Welcome to <b>Material Dashboard</b> - a beautiful freebie for every web developer."
+      message: "Selamat <b>Data Berhasil ditambahkan </b>!"
 
     }, {
       type: type[color],

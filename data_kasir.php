@@ -35,15 +35,25 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">No Handphone</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
                  
                    
-                    <button type="submit" class="btn btn-primary pull-right">Simpan</button>
+                    <button type="submit" onclick="md.showNotification('top','left')" class="btn btn-primary pull-right">Simpan</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>
               </div>
             </div>
             <div class="col-md-8">
+           
               <div class="card card-profile">
                 <div class="card-avatar">
                  <br>
@@ -52,20 +62,15 @@
                 <table class="table">
                       <thead class=" text-primary">
                         <th>
-                          ID
+                          No
                         </th>
                         <th>
-                          Name
+                          Nama Kasir
                         </th>
                         <th>
-                          Country
+                          No Handphone
                         </th>
-                        <th>
-                          City
-                        </th>
-                        <th>
-                          Salary
-                        </th>
+                       
                       </thead>
                       <tbody>
                         <tr>
@@ -78,98 +83,9 @@
                           <td>
                             Niger
                           </td>
-                          <td>
-                            Oud-Turnhout
-                          </td>
-                          <td class="text-primary">
-                            $36,738
-                          </td>
+                          
                         </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Minerva Hooper
-                          </td>
-                          <td>
-                            Curaçao
-                          </td>
-                          <td>
-                            Sinaai-Waas
-                          </td>
-                          <td class="text-primary">
-                            $23,789
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            3
-                          </td>
-                          <td>
-                            Sage Rodriguez
-                          </td>
-                          <td>
-                            Netherlands
-                          </td>
-                          <td>
-                            Baileux
-                          </td>
-                          <td class="text-primary">
-                            $56,142
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
-                          </td>
-                          <td>
-                            Philip Chaney
-                          </td>
-                          <td>
-                            Korea, South
-                          </td>
-                          <td>
-                            Overland Park
-                          </td>
-                          <td class="text-primary">
-                            $38,735
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Doris Greene
-                          </td>
-                          <td>
-                            Malawi
-                          </td>
-                          <td>
-                            Feldkirchen in Kärnten
-                          </td>
-                          <td class="text-primary">
-                            $63,542
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            Mason Porter
-                          </td>
-                          <td>
-                            Chile
-                          </td>
-                          <td>
-                            Gloucester
-                          </td>
-                          <td class="text-primary">
-                            $78,615
-                          </td>
-                        </tr>
+                       
                       </tbody>
                     </table>
                 </div>
