@@ -37,12 +37,12 @@
               <div class="card card-profile">
                 <div class="card-avatar">
                   <a href="#pablo">
-                    <img class="img" src="assets/img/ayam.jpeg" />
+                    <img class="img" src="assets/img/kentang.jpg" />
                   </a>
                 </div>
                 <div class="card-body">
-                  <h6 class="card-category">Ayam Goreng Paha</h6>
-                  <h4 class="card-title">25.000</h4>
+                  <h6 class="card-category">Kentang Goreng</h6>
+                  <h4 class="card-title">5.000</h4>
                   <p class="card-description">
                     paket ayam goreng dan nasi
                   </p>
