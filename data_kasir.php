@@ -1,4 +1,3 @@
-
 <?php
     include "header.php";
 ?>
@@ -15,15 +14,18 @@
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
+
           <div class="row">
-            <div class="col-md-12">
-              <div class="card formInput" hidden="hidden">
+            <div class="col-md-4">
+              <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title">DATA KASIR</h4>
                   <p class="card-category"></p>
                 </div>
                 <div class="card-body">
                   <form>
+             
+                  
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
@@ -32,6 +34,7 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
@@ -40,30 +43,22 @@
                         </div>
                       </div>
                     </div>
-                    <button type="button" onclick="md.showNotification('top','right')" class="btn btn-primary btn-sm pull-right">Simpan</button>
-                     <button type="button" onclick="awal()" class="btn btn-secondary btn-sm pull-right">Cancel</button>
+                 
+                   
+                    <button type="button" onclick="md.showNotification('top','right')" class="btn btn-primary pull-right">Simpan</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
-              <div class="card card-profile tabelData">
+            <div class="col-md-8">
+           
+              <div class="card card-profile">
                 <div class="card-avatar">
-                  <br></div>
-                <div class="card-body">
-                  <br> <button type="button" onclick="tambah()" class="btn btn-primary btn-sm pull-right">Tambah Data</button>
+                 <br>
                 </div>
-                <table class="table ">
-                      <thead class=" text-primary">
-                        <th>No</th>
-                        <th>Nama Kasir</th>
-                        <th>No Handphone</th>
-                      </thead>
-                      <tbody>
-                        <tr><td>1</td><td>Dakota Rice</td><td>Niger</td> </tr> 
-                      </tbody>
-                    </table>
+                <div class="card-body">
+                  <div id="tampil_data"></div>
                 </div>
               </div>
             </div>
@@ -75,3 +70,17 @@
       <?php
             include "footer.php";
         ?>
+        <script>
+         $(document).ready(function(){
+            tampil_data();
+        });
+         function tampil_data(){
+            $.ajax({
+                url:'api_select_kasir.php',
+                type:'get',
+                success: function(data){
+                    $('#tampil_data').html(data);
+                }
+            })
+        }
+        </script>
