@@ -5,6 +5,7 @@
             <th>Harga Jual</th>
             <th>Foto</th>
             <th>Kategori</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,9 @@
                     <td><?php echo $d['harga_jual']; ?></td>
                     <td><?php echo $d['foto']; ?></td>
                     <td><?php echo $d['kategori']; ?></td>
+                    <td>
+                    <button id="<?php echo $d['id_menu']; ?>" class=" hapus_data">  Hapus </button>
+                    </td>
                 </tr>
                 <?php
             }

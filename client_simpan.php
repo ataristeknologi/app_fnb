@@ -16,6 +16,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
      <script>
+         $(document).ready(function(){
+            tampil_data();
+        });
          function tampil_data(){
             $.ajax({
                 url:'api_select.php',
@@ -25,6 +28,21 @@
                 }
             })
         }
+         // hapus data
+ $(document).on('click', '.hapus_data', function(){ 
+ var id = $(this).attr('id');
+ 
+ $.ajax({
+ type: 'POST',
+ url: "api_delete.php",
+ data: {id:id}, 
+ success: function(response) { 
+     //setelah simpan data, update data terbaru
+ tampil_data() 
+ }
+ });
+ });
+
 $("#tombol_simpan").click(function () {
                             
 
