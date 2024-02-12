@@ -23,14 +23,23 @@
                   <p class="card-category"></p>
                 </div>
                 <div class="card-body">
-                  <form>
+                  <form id="form_input">
              
                   
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Nama Kasir</label>
-                          <input type="text" class="form-control">
+                          <input type="text" name="nama_kasir" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Alamat</label>
+                          <input type="text" name="alamat" class="form-control">
                         </div>
                       </div>
                     </div>
@@ -39,13 +48,13 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">No Handphone</label>
-                          <input type="text" class="form-control">
+                          <input type="text" name="no_handphone" class="form-control">
                         </div>
                       </div>
                     </div>
                  
                    
-                    <button type="button" onclick="md.showNotification('top','right')" class="btn btn-primary pull-right">Simpan</button>
+                    <button type="button" id="tombol_simpan" onclick="md.showNotification('top','right')" class="btn btn-primary pull-right">Simpan</button>
                     <div class="clearfix"></div>
                   </form>
                 </div>
@@ -83,4 +92,31 @@
                 }
             })
         }
+
+        $("#tombol_simpan").click(function () {
+                            $.ajax({
+                              type: 'POST',
+                                      url: "api_simpan_kasir.php",
+                                         data: $('#form_input').serialize(),
+                                         success: function () {
+                                             //setelah simpan data, update data terbaru
+                                             tampil_data()
+                                         }
+                             });
+                          return false;
+                     });
+
+                     $(document).on('click', '.hapus_data', function(){ 
+                    var id = $(this).attr('id');
+                    
+                    $.ajax({
+                    type: 'POST',
+                    url: "api_delete_kasir.php",
+                    data: {id:id}, 
+                    success: function(response) { 
+                        //setelah simpan data, update data terbaru
+                    tampil_data() 
+                    }
+                    });
+                    });
         </script>

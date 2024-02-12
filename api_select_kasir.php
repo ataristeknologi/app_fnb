@@ -21,7 +21,7 @@
                     <td><?php echo $d['alamat']; ?></td>
                     <td><?php echo $d['no_handphone']; ?></td>
                     <td>
-                    <button id="<?php echo $d['id_kasir']; ?>" class=" hapus_data">  Hapus </button>
+                    <button id="<?php echo $d['id_kasir']; ?>" class="btn btn-warning hapus_data">  Hapus </button>
                     </td>
                 </tr>
                 <?php
