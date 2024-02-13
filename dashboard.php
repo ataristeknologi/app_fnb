@@ -148,7 +148,7 @@
                     </table>
             </div>
             <div class="col-md-9">
-            <div class="row" style="margin-bottom:20px;">
+            <div class="row" style="margin-bottom20px;">
                   <div class="col-lg-8 col-md-10 ml-auto mr-auto">
                     <div class="row">
                       <div class="col-md-4">
@@ -163,87 +163,31 @@
                     </div>
                   </div>
                 </div>
-            <div class="row">
-            <div class="col-md-3">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="assets/img/ayam.jpeg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category">Ayam Goreng Paha</h6>
-                  <h4 class="card-title">25.000</h4>
-                  <p class="card-description">
-                    paket ayam goreng dan nasi
-                  </p>
-                  <a href="#pablo" class="btn btn-success Beli">Beli</a>
-                </div>
-              </div>
-            </div>
+            <div class="row"  id="tampil_data">
 
-            <div class="col-md-3">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="assets/img/kentang.jpg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category">Kentang Goreng</h6>
-                  <h4 class="card-title">5.000</h4>
-                  <p class="card-description">
-                    paket ayam goreng dan nasi
-                  </p>
-                  <a href="#pablo" class="btn btn-success Beli">Beli</a>
-                </div>
-              </div>
+         
             </div>
-
-            <div class="col-md-3">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="assets/img/ayam.jpeg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category">Ayam Goreng Paha</h6>
-                  <h4 class="card-title">25.000</h4>
-                  <p class="card-description">
-                    paket ayam goreng dan nasi
-                  </p>
-                  <a href="#pablo" class="btn btn-success Beli">Beli</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="#pablo">
-                    <img class="img" src="assets/img/ayam.jpeg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category">Ayam Goreng Paha</h6>
-                  <h4 class="card-title">25.000</h4>
-                  <p class="card-description">
-                    paket ayam goreng dan nasi
-                  </p>
-                  <a href="#pablo" class="btn btn-success Beli">Beli</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
             </div>
         </div>
-       
-
-  
+      
         </div>
       </div>
       <?php
             include "footer.php";
         ?>
+        
+        <script>
+         $(document).ready(function(){
+            tampil_data();
+        });
+         function tampil_data(){
+            $.ajax({
+                url:'api_select_menu.php',
+                type:'get',
+                success: function(data){
+                  console.log(data);
+                    $('#tampil_data').html(data);
+                }
+            })
+        }
+        </script>
